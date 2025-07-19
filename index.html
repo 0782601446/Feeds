@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Feed Supplement Prediction</title>
     <style>
         /* General body styling with agricultural background image */
@@ -28,7 +28,8 @@
 
         h1 {
             text-align: center;
-            color: #b3cdb567;
+            color: maroon;       /* changed to maroon */
+            font-weight: bold;   /* kept bold */
             font-size: 24px;
             margin-bottom: 20px;
         }
@@ -125,13 +126,13 @@
             </select>
 
             <label for="corn">Corn (kg):</label>
-            <input type="number" id="corn" name="corn" step="0.1" min="0" placeholder="Enter amount in kg" required>
+            <input type="number" id="corn" name="corn" step="0.1" min="0" placeholder="Enter amount in kg" required />
 
             <label for="soybean">Soybean Meal (kg):</label>
-            <input type="number" id="soybean" name="soybean" step="0.1" min="0" placeholder="Enter amount in kg" required>
+            <input type="number" id="soybean" name="soybean" step="0.1" min="0" placeholder="Enter amount in kg" required />
 
             <label for="wheat">Wheat (kg):</label>
-            <input type="number" id="wheat" name="wheat" step="0.1" min="0" placeholder="Enter amount in kg" required>
+            <input type="number" id="wheat" name="wheat" step="0.1" min="0" placeholder="Enter amount in kg" required />
 
             <button type="button" onclick="predictFeedSuitability()">Predict Suitability</button>
         </form>
